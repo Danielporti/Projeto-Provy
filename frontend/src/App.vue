@@ -5,10 +5,10 @@
     <header>
       <div class="header-left">
       <router-link to="/">
-        <button class="btnLogo"><img src="../Imagens/logo.png" alt="Logo" class="logo"></button>
+        <button class="btnLogo"><img src="../Imagens/logo.jpeg" alt="Logo" class="logo"></button>
       </router-link>
         <h1>Provy</h1>
-        <p>Plataforma para solução<br> do seus problemas</p>
+        
       </div>
       <div class="header-right">
         <router-link to="/cadastrocliente">
@@ -28,9 +28,10 @@
 
     <main class="main-content">
       <div v-if="$route.path === '/'">
+        <SolucaoProblemas />
+        <Comunicação />
         <service-list />
         <testimonials />
-        <provedor-list /> <!-- Aqui você inclui a lista de provedores -->
       </div>
 
       <router-view v-else />
@@ -50,6 +51,8 @@ import ServiceList from './components/ServiceList.vue';
 import Testimonials from './components/Testimonials.vue';
 import FooterComponent from './components/FooterComponent.vue';
 import ProvedorList from './components/ListaDePrestadores.vue'; // Importa o novo componente
+import SolucaoProblemas from './components/SolucaoProblemas.vue';
+import Comunicação from './components/Comunicação.vue';
 
 export default {
   name: 'App',
@@ -81,8 +84,8 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: #2c3e50;
   margin: 0;
-  background-image: 
-    linear-gradient(rgba(15, 70, 126, 0.815), rgba(0, 0, 97, 0.712)), /* Gradiente azul com mais transparência */
+  /*background-image: 
+    linear-gradient(rgba(15, 70, 126, 0.815), rgba(0, 0, 97, 0.712)), /* Gradiente azul com mais transparência 
     url("../Imagens/fundo.png"); /* Imagem de fundo */
   background-size: cover; 
   background-repeat: no-repeat; 
@@ -95,7 +98,7 @@ header {
   align-items: center;
   padding: 20px 30px;
   width: 100%;
-  background-color: #001357;  
+  background-color: #ffffff;  
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
 }
@@ -120,13 +123,13 @@ header {
 
 .btnLogo{
   border-radius: 50px;
-  background-color: #001357;
+  background-color: #ffffff;
   border: white;
 }
 
 header h1 {
   font-size: 1.75rem;
-  color: white;
+  color: #458FF6;
   margin: 0;
   margin-left: -15px
 }
@@ -148,7 +151,7 @@ header p {
 .btn {
 
   background-color: white;
-  color: blue;
+  color: #2d3748;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -165,7 +168,7 @@ header p {
 }
 
 .list-prestadores-btn {
-  background-color: #27ae60;
+  background-color: #FF5733;
   color: white;
   border: none;
   border-radius: 5px;
@@ -175,8 +178,6 @@ header p {
   
   
 }
-
-
 
 .main-content {
   flex: 1;
@@ -200,7 +201,7 @@ header p {
 }
 
 p {
-  color: blue;
+  color: #458FF6;
   font-weight: bold;
 }
 

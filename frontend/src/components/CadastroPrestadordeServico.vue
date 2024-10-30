@@ -176,7 +176,7 @@ export default {
 
 .cadastro-container h2 {
   margin-bottom: 1rem;
-  color: blue;
+  color: #458FF6;
 }
 
 .input-group input,
@@ -196,8 +196,8 @@ export default {
 
 .btn {
   background-color: white;
-  color: blue;
-  border: 2px solid blue;
+  color: #458FF6;
+  border: 2px solid #458FF6;
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 1rem;
@@ -219,5 +219,9 @@ export default {
 /* Novo estilo para texto vermelho */
 .red-text {
   color: red;
+}
+
+router-link {
+  color: #FF5733;
 }
 </style>

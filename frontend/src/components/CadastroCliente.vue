@@ -84,7 +84,7 @@ export default {
 
 .cadastro-container h2 {
   margin-bottom: 1rem;
-  color: blue;
+  color: #458FF6;
 }
 
 .input-group input {
@@ -103,8 +103,8 @@ export default {
 
 .btn {
   background-color: white; /* Cor de fundo do botão */
-  color: blue; /* Cor do texto */
-  border: 2px solid blue; /* Borda de 2 pixels, sólida e azul */
+  color: #458FF6; /* Cor do texto */
+  border: 2px solid #458FF6; /* Borda de 2 pixels, sólida e azul */
   border-radius: 5px; /* Cantos arredondados */
   padding: 10px 20px; /* Espaçamento interno */
   font-size: 1rem; /* Tamanho da fonte */
@@ -117,6 +117,10 @@ export default {
   background-color: #2980b9; /* Muda a cor de fundo ao passar o mouse */
   color: white; /* Muda a cor do texto ao passar o mouse */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+router-link {
+  color: #FF5733;
 }
 
 </style>

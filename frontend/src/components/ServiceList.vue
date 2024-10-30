@@ -57,7 +57,7 @@ export default {
 .service {
   flex: 0 0 100%; /* Garante que cada serviço ocupe 100% do contêiner do carrossel */
   height: 250px; /* Altura fixa para as caixas */
-  background: #1565c0;
+  background: #458FF6;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -73,7 +73,9 @@ export default {
 }
 
 
-
+.section-title {
+  color: #458FF6;
+}
 
 .service:hover {
   transform: translateY(-10px);

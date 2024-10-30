@@ -12,7 +12,7 @@
       </div>
       <button type="submit" class="btn">Login</button>
     </form>
-    <p>Não possui cadastro? <router-link to="/">Cadastre-se aqui</router-link></p>
+    <p>Não possui cadastro? <router-link to="/CadastroCliente">Cadastre-se aqui</router-link></p>
   </div>
 </template>
 
@@ -64,7 +64,7 @@ export default {
 
 .login-container h2 {
   margin-bottom: 1rem;
-  color: blue;
+  color: #458FF6;
 }
 
 /* Estilos comuns */
@@ -108,7 +108,7 @@ p {
 }
 
 router-link {
-  color: var(--color-link);
+  color: #FF5733;
 }
 
 router-link:hover {
